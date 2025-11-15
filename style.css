@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #f1c40f;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #111;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: #f1c40f;
+    border: none;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home {
+    background: linear-gradient(120deg, #000, #222);
+    padding: 140px 20px;
+}
+
+.home span {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #f1c40f;
+    color: #000;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skills-box span {
+    background: #111;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #f1c40f;
+}
+
+.coming-soon-box {
+    background: #111;
+    border: 2px solid #f1c40f;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.coming-soon-box:hover {
+    background: #f1c40f;
+    color: #000;
+    transform: translateY(-5px);
+}
+
+.ach-list {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    font-size: 18px;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #111;
+        text-align: center;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
